@@ -29,6 +29,10 @@ import ParentComponent from "./components/ProvideAndInject/ParentComponent.vue";
 import FunctionRef from "./components/LifecycleTemplateRefs/FunctionRef.vue";
 import RefComponent from "./components/RefComponent/RefComponent.vue";
 import ToggleFriends from "./components/AsyncComponent/ToggleFriends.vue";
+import Composable from "./components/Composable/CounterComponent.vue";
+import MyCustomDirective from "./components/CustomDirectives/MyCustomDirective.vue";
+import DynamichC from "./components/DynamicComponents/DynamichC.vue";
+
 const message = ref("Message From Parent");
 const childMsg = ref("No child msg yet");
 const handleChildForm = (username, password) => {
@@ -140,6 +144,15 @@ const isShow = ref(true);
 
   <!-- Async Component -->
   <ToggleFriends />
+
+  <!-- Composable -->
+  <Composable />
+
+  <!-- Custom Directive -->
+  <MyCustomDirective />
+
+  <!-- Dynamic Components -->
+  <DynamichC />
 </template>
 
 <style></style>
